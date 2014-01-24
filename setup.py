@@ -2,8 +2,8 @@ import os
 from setuptools import setup, find_packages
 
 install_requires = [
-    'umysql',
-    'pymysql',
+    'umysql>=2.61',
+    'pymysql>=0.6',
 ]
 
 setup(
@@ -11,7 +11,7 @@ setup(
     description = "MySQLdb compatible wrapper for ultramysql",
     long_description = open(os.path.join(os.path.dirname(__file__),
                                          'README.rst')).read(),
-    version = '1.0.4dev',
+    version = '1.0.4dev2',
     packages = find_packages(exclude=['examples', 'tests']),
     install_requires = install_requires,
     author = "Qiangning Hong",
@@ -26,5 +26,5 @@ setup(
                  "Topic :: Software Development :: Libraries :: Python Modules",
                 ],
     test_suite = 'nose.collector',
-    tests_require = ['nose'],
+    tests_require = ['nose', 'mock'],
 )
