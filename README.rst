@@ -2,6 +2,11 @@
 umysqldb
 ========
 
+.. warning::
+
+   This wrapper is no longer recommended or supported. See
+   https://github.com/zodb/relstorage/issues/264
+
 A MySQLdb compatible wrapper around ultramysql_.
 
 .. _ultramysql: https://github.com/esnme/ultramysql
